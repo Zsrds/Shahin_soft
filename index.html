@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shahin Soft — Professional mobile & web app development company from Bangladesh." />
+  <title>Shahin Soft | Mobile & Web App Development</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+
+<!-- ══════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════ -->
+<header class="navbar" role="banner">
+  <nav class="nav-inner" aria-label="Main navigation">
+
+    <!-- Logo -->
+    <a href="#home" class="nav-logo">Shahin<span>Soft</span></a>
+
+    <!-- Desktop Links -->
+    <ul class="nav-links" role="list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li class="nav-dropdown">
+        <button class="nav-link-btn" aria-haspopup="true" aria-expanded="false">
+          Apps <span>▾</span>
+        </button>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="pages/app1.html" role="menuitem">
+            🎯 Bubble Shooter Nova
+          </a>
+          <a href="pages/app2.html" role="menuitem">
+            🌤️ Weather Pro
+          </a>
+          <a href="pages/app3.html" role="menuitem">
+            📝 Note Keeper
+          </a>
+        </div>
+      </li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+
+    <!-- Hamburger -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+
+  <button class="mob-toggle" data-target="mob-apps-menu">
+    Apps <span class="mob-arrow">▾</span>
+  </button>
+  <div class="mob-submenu" id="mob-apps-menu">
+    <a href="pages/app1.html">🎯 Bubble Shooter Nova</a>
+    <a href="pages/app2.html">🌤️ Weather Pro</a>
+    <a href="pages/app3.html">📝 Note Keeper</a>
+  </div>
+
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section id="home" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <div class="container">
+    <div class="hero-content fade-up">
+      <div class="hero-badge">Available for new projects</div>
+
+      <h1>
+        We Build <span class="highlight">Smart</span><br />
+        Mobile & Web Apps
+      </h1>
+
+      <p class="hero-desc">
+        Android · iOS · Web Solutions crafted for modern businesses.
+        We turn your ideas into powerful, beautiful digital products.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#services" class="btn btn-primary">
+          Explore Services →
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          Get In Touch
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="num"><span data-count="50">0</span>+</div>
+          <div class="lbl">Apps Delivered</div>
+        </div>
+        <div class="stat-item">
+          <div class="num"><span data-count="30">0</span>+</div>
+          <div class="lbl">Happy Clients</div>
+        </div>
+        <div class="stat-item">
+          <div class="num"><span data-count="5">0</span>+</div>
+          <div class="lbl">Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     SERVICES
+══════════════════════════════════════ -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">What We Do</div>
+      <h2 class="section-title">Our Core Services</h2>
+      <p class="section-sub">
+        End-to-end development from idea to App Store — built with the latest technology.
+      </p>
+    </div>
+
+    <div class="services-grid reveal-stagger">
+      <div class="service-card">
+        <div class="service-icon">🤖</div>
+        <h3>Android App Development</h3>
+        <p>
+          High-performance Android apps with modern Material Design UI,
+          optimized for all screen sizes and the latest Android versions.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🍎</div>
+        <h3>iOS App Development</h3>
+        <p>
+          Beautiful iPhone & iPad applications following Apple's Human
+          Interface Guidelines — delivered to the App Store smoothly.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🌐</div>
+        <h3>Web Development</h3>
+        <p>
+          Responsive, fast-loading websites and web applications.
+          From simple landing pages to complex SaaS platforms.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <h3>UI / UX Design</h3>
+        <p>
+          User-centered design that feels intuitive and looks stunning.
+          Wireframes, prototypes, and production-ready design systems.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>App Maintenance</h3>
+        <p>
+          Ongoing support, performance tuning, bug fixes, and updates
+          to keep your app running smoothly after launch.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">☁️</div>
+        <h3>Backend & API</h3>
+        <p>
+          Scalable server architecture, REST / GraphQL APIs, Firebase,
+          and cloud integrations to power your mobile and web apps.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     APPS
+══════════════════════════════════════ -->
+<section id="apps" class="section apps-section">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">Our Portfolio</div>
+      <h2 class="section-title">Apps We've Built</h2>
+      <p class="section-sub">
+        A selection of published apps across gaming, productivity, and utilities.
+      </p>
+    </div>
+
+    <div class="apps-grid reveal-stagger">
+      <div class="app-card">
+        <div class="app-icon">🎯</div>
+        <h3>Bubble Shooter Nova</h3>
+        <p>Classic bubble shooting game with smooth physics, beautiful levels, and addictive gameplay. Loved by thousands of players.</p>
+        <a href="pages/app1.html" class="app-link">Privacy Policy →</a>
+      </div>
+
+      <div class="app-card">
+        <div class="app-icon">🌤️</div>
+        <h3>Weather Pro</h3>
+        <p>Real-time weather updates with hourly forecasts, radar maps, and beautiful animated UI for any city in the world.</p>
+        <a href="pages/app2.html" class="app-link">Privacy Policy →</a>
+      </div>
+
+      <div class="app-card">
+        <div class="app-icon">📝</div>
+        <h3>Note Keeper</h3>
+        <p>Simple, fast, and elegant note-taking app. Organize your thoughts with tags, folders, and cloud sync.</p>
+        <a href="pages/app3.html" class="app-link">Privacy Policy →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     ABOUT
+══════════════════════════════════════ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-inner">
+
+      <!-- Left: Visual -->
+      <div class="about-visual reveal">
+        <div class="about-visual-box">
+          <div class="about-mini-card">
+            <div class="num" data-count="50">0</div>
+            <div class="lbl">Apps Delivered</div>
+          </div>
+          <div class="about-mini-card">
+            <div class="num" data-count="30">0</div>
+            <div class="lbl">Happy Clients</div>
+          </div>
+          <div class="about-mini-card">
+            <div class="num" data-count="5">0</div>
+            <div class="lbl">Years Active</div>
+          </div>
+          <div class="about-mini-card">
+            <div class="num" data-count="4">0</div>
+            <div class="lbl">Team Members</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Text -->
+      <div class="reveal">
+        <div class="section-tag">About Us</div>
+        <h2 class="section-title">Who We Are</h2>
+        <p style="color: var(--text-muted); font-size: 15px; line-height: 1.8; margin-bottom: 10px;">
+          Shahin Soft is a modern software company based in Bangladesh, focused on building
+          high-quality mobile and web applications. We help startups and businesses grow
+          digitally with reliable, scalable technology solutions.
+        </p>
+        <p style="color: var(--text-muted); font-size: 15px; line-height: 1.8;">
+          Our team combines technical expertise with creative design to deliver products
+          that users love and businesses rely on.
+        </p>
+        <ul class="about-list">
+          <li>Clean, maintainable code following industry best practices</li>
+          <li>On-time delivery with transparent project management</li>
+          <li>Post-launch support and continuous improvement</li>
+          <li>Culturally adapted solutions for South Asian markets</li>
+        </ul>
+        <div style="margin-top: 32px;">
+          <a href="#contact" class="btn btn-primary">Work With Us →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     CONTACT
+══════════════════════════════════════ -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="reveal" style="margin-bottom: 50px;">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="section-title">Let's Build Something</h2>
+      <p class="section-sub">
+        Have a project in mind? Send us a message and we'll get back to you within 24 hours.
+      </p>
+    </div>
+
+    <div class="contact-inner">
+      <!-- Info -->
+      <div class="contact-info reveal">
+        <div class="contact-item">
+          <div class="contact-item-icon">📧</div>
+          <div class="contact-item-text">
+            <div class="label">Email</div>
+            <div class="value">support@shahinsoft.com</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div class="contact-item-text">
+            <div class="label">Location</div>
+            <div class="value">Bangladesh</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">⏰</div>
+          <div class="contact-item-text">
+            <div class="label">Response Time</div>
+            <div class="value">Within 24 hours</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">💼</div>
+          <div class="contact-item-text">
+            <div class="label">Status</div>
+            <div class="value" style="color: #22c55e;">● Available for projects</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="App development inquiry" />
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service">
+            <option value="">Select a service…</option>
+            <option>Android App Development</option>
+            <option>iOS App Development</option>
+            <option>Web Development</option>
+            <option>UI / UX Design</option>
+            <option>Backend & API</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us about your project…" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-submit" style="width: 100%; justify-content: center;">
+          Send Message →
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Shahin<span>Soft</span></div>
+        <p>
+          Building high-quality mobile and web applications for startups
+          and businesses across Bangladesh and beyond.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Android Development</a></li>
+          <li><a href="#services">iOS Development</a></li>
+          <li><a href="#services">Web Development</a></li>
+          <li><a href="#services">UI / UX Design</a></li>
+          <li><a href="#services">Backend & API</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Apps</h4>
+        <ul>
+          <li><a href="pages/app1.html">Bubble Shooter Nova</a></li>
+          <li><a href="pages/app2.html">Weather Pro</a></li>
+          <li><a href="pages/app3.html">Note Keeper</a></li>
+        </ul>
+        <h4 style="margin-top: 24px;">Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Shahin Soft | All Rights Reserved</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Facebook" title="Facebook">f</a>
+        <a href="#" aria-label="Twitter" title="Twitter">𝕏</a>
+        <a href="#" aria-label="LinkedIn" title="LinkedIn">in</a>
+        <a href="#" aria-label="GitHub" title="GitHub">⌥</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
