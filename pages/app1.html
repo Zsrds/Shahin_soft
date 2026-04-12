@@ -4,404 +4,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bubble Shooter Nova — Privacy Policy | Shahin Soft</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --bg: #f5f7fa;
-      --surface: #ffffff;
-      --border: #e2e8f0;
-      --text: #1e293b;
-      --muted: #64748b;
-      --accent: #3b82f6;
-      --accent2: #6366f1;
-      --green: #10b981;
-      --radius: 14px;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-    }
-
-    /* ── NAV ── */
-    .page-nav {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 14px 24px;
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      font-size: 14px;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    .page-nav a {
-      font-weight: 700;
-      text-decoration: none;
-      color: var(--text);
-      font-size: 16px;
-    }
-    .page-nav a span { color: var(--accent2); }
-    .sep { color: var(--muted); }
-    .page-title { color: var(--muted); font-size: 14px; }
-
-    /* ── HERO ── */
-    .app-hero {
-      text-align: center;
-      padding: 52px 24px 40px;
-      background: linear-gradient(160deg, #eff6ff 0%, #eef2ff 100%);
-      border-bottom: 1px solid var(--border);
-    }
-    .app-hero-icon {
-      width: 76px;
-      height: 76px;
-      border-radius: 20px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 36px;
-      margin-bottom: 16px;
-      box-shadow: 0 8px 24px rgba(99,102,241,.25);
-    }
-    .app-hero h1 {
-      font-size: 26px;
-      font-weight: 700;
-      color: var(--text);
-      margin-bottom: 8px;
-    }
-    .app-hero p {
-      font-size: 15px;
-      color: var(--muted);
-      max-width: 480px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-
-    /* ── CONTENT ── */
-    .privacy-content {
-      max-width: 720px;
-      margin: 40px auto;
-      padding: 0 20px 60px;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    /* ── CARDS ── */
-    .privacy-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px 28px;
-    }
-    .privacy-card h2 {
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--text);
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .privacy-card h2 span { font-size: 18px; }
-    .privacy-card p {
-      font-size: 14px;
-      color: var(--muted);
-      line-height: 1.75;
-    }
-    .privacy-card ul {
-      list-style: none;
-      margin-top: 8px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-    .privacy-card ul li {
-      font-size: 14px;
-      color: var(--muted);
-      padding-left: 20px;
-      position: relative;
-      line-height: 1.6;
-    }
-    .privacy-card ul li::before {
-      content: '';
-      position: absolute;
-      left: 4px;
-      top: 8px;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--accent2);
-    }
-    .privacy-card strong { color: var(--text); }
-    .date-badge {
-      display: inline-block;
-      font-size: 12px;
-      background: #eff6ff;
-      color: var(--accent);
-      border-radius: 20px;
-      padding: 3px 12px;
-      border: 1px solid #bfdbfe;
-      margin-bottom: 12px;
-    }
-    .no-collect-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 13px;
-      background: #f0fdf4;
-      color: #16a34a;
-      border: 1px solid #bbf7d0;
-      border-radius: 20px;
-      padding: 4px 12px;
-      margin-bottom: 12px;
-      font-weight: 500;
-    }
-    .chip-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 12px;
-    }
-    .chip {
-      font-size: 12px;
-      padding: 5px 12px;
-      border-radius: 20px;
-      background: #f1f5f9;
-      color: var(--muted);
-      border: 1px solid var(--border);
-    }
-    .chip.blue { background: #eff6ff; color: #2563eb; border-color: #bfdbfe; }
-    .chip.green { background: #f0fdf4; color: #16a34a; border-color: #bbf7d0; }
-    .chip.amber { background: #fffbeb; color: #b45309; border-color: #fde68a; }
-
-    .perm-row {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 8px;
-    }
-    .perm-item {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      padding: 10px 14px;
-      background: #f8fafc;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-    }
-    .perm-name {
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--accent2);
-      font-family: monospace;
-      min-width: 160px;
-      padding-top: 1px;
-    }
-    .perm-desc {
-      font-size: 13px;
-      color: var(--muted);
-      line-height: 1.5;
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-top: 12px;
-    }
-    .contact-item {
-      background: #f8fafc;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 12px 14px;
-    }
-    .contact-item .label {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: .05em;
-      color: var(--muted);
-      margin-bottom: 4px;
-    }
-    .contact-item .value {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--text);
-    }
-    .contact-item .value a { color: var(--accent); text-decoration: none; }
-
-    /* ── FOOTER ── */
-    .page-footer {
-      text-align: center;
-      font-size: 13px;
-      color: var(--muted);
-      padding: 24px;
-      border-top: 1px solid var(--border);
-      background: var(--surface);
-    }
-    .page-footer a { color: var(--accent2); text-decoration: none; font-weight: 600; }
-
-    @media (max-width: 520px) {
-      .contact-grid { grid-template-columns: 1fr; }
-      .perm-name { min-width: 120px; }
-      .app-hero { padding: 36px 20px 28px; }
-    }
-  </style>
+  <link rel="stylesheet" href="../css/pages.css" />
 </head>
 <body>
-
 <nav class="page-nav">
-  <a href="#">Shahin<span>Soft</span></a>
+  <a href="../index.html">Shahin<span>Soft</span></a>
   <span class="sep">/</span>
   <span class="page-title">Bubble Shooter Nova — Privacy Policy</span>
 </nav>
-
 <div class="app-hero">
   <div class="app-hero-icon" style="background:linear-gradient(135deg,#3b82f6,#6366f1);">🎯</div>
   <h1>Bubble Shooter Nova</h1>
   <p>Classic bubble shooting fun. Shoot, match, and pop your way through hundreds of colorful levels.</p>
 </div>
-
 <div class="privacy-content">
-
-  <!-- 1. Overview -->
   <div class="privacy-card">
-    <h2><span>🔒</span> 1. Privacy Policy Overview</h2>
-    <span class="date-badge">📅 Effective Date: April 13, 2026</span>
-    <p>Shahin Soft built <strong>Bubble Shooter Nova</strong> as a free app. This page informs you of our policies regarding the collection, use, and disclosure of personal information when you use our app.</p>
-    <p style="margin-top:10px;">By using this app, you agree to the practices described in this policy.</p>
+    <h2><span>🔒</span> Privacy Policy</h2>
+    <p>Last updated: January 2026</p>
+    <p style="margin-top:12px;">Shahin Soft built <strong>Bubble Shooter Nova</strong> as a free app. This page informs you of our policies regarding the collection, use, and disclosure of personal information when you use our app.</p>
   </div>
-
-  <!-- 2. Information Collected -->
   <div class="privacy-card">
-    <h2><span>📊</span> 2. Information We Collect</h2>
-    <div class="no-collect-badge">✅ No personally identifiable information collected</div>
-    <p>We do <strong>not</strong> collect any personal data such as name, email address, or phone number. However, certain non-personal technical data may be collected automatically:</p>
-
-    <p style="margin-top:14px; font-size:13px; font-weight:600; color:#334155;">Device &amp; Technical Information</p>
-    <div class="chip-row">
-      <span class="chip blue">Device model &amp; manufacturer</span>
-      <span class="chip blue">OS version</span>
-      <span class="chip blue">Screen size &amp; resolution</span>
-      <span class="chip blue">Language &amp; region settings</span>
-      <span class="chip blue">Device configuration</span>
-    </div>
-
-    <p style="margin-top:14px; font-size:13px; font-weight:600; color:#334155;">Network Information</p>
-    <div class="chip-row">
-      <span class="chip green">Internet connection status</span>
-      <span class="chip green">Approximate network-based location (non-precise)</span>
-    </div>
-
-    <p style="margin-top:14px; font-size:13px; font-weight:600; color:#334155;">Advertising Identifier</p>
-    <div class="chip-row">
-      <span class="chip amber">Google Advertising ID (Ad ID)</span>
-      <span class="chip amber">Ad impressions &amp; click data</span>
-    </div>
-  </div>
-
-  <!-- 3. How We Use -->
-  <div class="privacy-card">
-    <h2><span>⚙️</span> 3. How We Use Information</h2>
-    <p>Collected information is used strictly for:</p>
+    <h2><span>📊</span> Information We Collect</h2>
+    <p>We do <strong>not</strong> collect any personally identifiable information. The app may collect:</p>
     <ul style="margin-top:12px;">
-      <li>Providing and improving game functionality</li>
-      <li>Displaying personalized or non-personalized advertisements</li>
-      <li>Analyzing app performance and user engagement</li>
-      <li>Preventing fraud, abuse, and technical issues</li>
+      <li>Anonymous gameplay statistics (level progress, score)</li>
+      <li>Device type and OS version (for crash reporting)</li>
+      <li>App usage analytics via Google Firebase (anonymized)</li>
     </ul>
   </div>
-
-  <!-- 4. Third-Party -->
   <div class="privacy-card">
-    <h2><span>🔗</span> 4. Third-Party Services</h2>
-    <p>Our app uses third-party services that may collect information to provide their services.</p>
-    <ul style="margin-top:12px;">
-      <li><strong>Google AdMob</strong> — Displays advertisements; may collect Advertising ID and device info. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:#3b82f6;">Privacy Policy ↗</a></li>
-      <li><strong>Google Firebase Analytics</strong> — Anonymized usage analytics</li>
-      <li><strong>Google Play Services</strong> — App functionality and advertising infrastructure</li>
+    <h2><span>🍪</span> Cookies & Tracking</h2>
+    <p>We do not use cookies directly. Third-party services (Google Ads, Firebase Analytics) may use device identifiers for analytics and advertising. You can opt out of personalized ads in your device settings.</p>
+  </div>
+  <div class="privacy-card">
+    <h2><span>🔗</span> Third-Party Services</h2>
+    <ul>
+      <li>Google Firebase Analytics</li>
+      <li>Google AdMob (for displaying ads)</li>
+      <li>Google Play Services</li>
     </ul>
   </div>
-
-  <!-- 5. Data Sharing -->
   <div class="privacy-card">
-    <h2><span>🤝</span> 5. Data Sharing</h2>
-    <div class="no-collect-badge">✅ We never sell or rent user data</div>
-    <p>We do not sell, trade, or rent any personal user data. Limited non-personal data may be shared with trusted third-party services (such as Google AdMob) solely for advertising and analytics purposes.</p>
+    <h2><span>👶</span> Children's Privacy</h2>
+    <p>Our app does not address anyone under 13. We do not knowingly collect personal data from children. If you discover your child has provided us data, contact us and we will delete it immediately.</p>
   </div>
-
-  <!-- 6. Data Security -->
   <div class="privacy-card">
-    <h2><span>🛡️</span> 6. Data Security</h2>
-    <p>We implement appropriate technical and organizational measures to protect user data against unauthorized access, alteration, disclosure, or destruction.</p>
-    <p style="margin-top:10px;">Please note that no method of transmission over the internet or electronic storage is 100% secure.</p>
+    <h2><span>📬</span> Contact Us</h2>
+    <p>Email: <strong style="color:var(--accent2);">support@shahinsoft.com</strong></p>
   </div>
-
-  <!-- 7. Children -->
-  <div class="privacy-card">
-    <h2><span>👶</span> 7. Children's Privacy</h2>
-    <p>Bubble Shooter Nova is not directed to children under the age of 13 and does not knowingly collect personal data from them. If you discover that your child has provided us with data, contact us and we will delete it immediately.</p>
-  </div>
-
-  <!-- 8. Permissions -->
-  <div class="privacy-card">
-    <h2><span>📱</span> 8. Permissions Used</h2>
-    <p>Our application requests the following Android permissions:</p>
-    <div class="perm-row">
-      <div class="perm-item">
-        <div class="perm-name">INTERNET</div>
-        <div class="perm-desc">To load advertisements and online services</div>
-      </div>
-      <div class="perm-item">
-        <div class="perm-name">ACCESS_NETWORK_STATE</div>
-        <div class="perm-desc">To check internet connectivity status</div>
-      </div>
-      <div class="perm-item">
-        <div class="perm-name">AD_ID</div>
-        <div class="perm-desc">To serve relevant advertisements via Google AdMob</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 9. Changes -->
-  <div class="privacy-card">
-    <h2><span>🔄</span> 9. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Any changes will be reflected within the app or on the Play Store listing. Continued use of the app after modifications indicates acceptance of the updated policy.</p>
-  </div>
-
-  <!-- 10. Contact -->
-  <div class="privacy-card">
-    <h2><span>📬</span> 10. Contact Us</h2>
-    <p>If you have any questions regarding this Privacy Policy:</p>
-    <div class="contact-grid">
-      <div class="contact-item">
-        <div class="label">Developer</div>
-        <div class="value">Shahin Soft</div>
-      </div>
-      <div class="contact-item">
-        <div class="label">Package</div>
-        <div class="value">com.zs.bubbleshooternova</div>
-      </div>
-      <div class="contact-item">
-        <div class="label">Email</div>
-        <div class="value"><a href="mailto:support@shahinsoft.com">support@shahinsoft.com</a></div>
-      </div>
-      <div class="contact-item">
-        <div class="label">Effective Date</div>
-        <div class="value">April 13, 2026</div>
-      </div>
-    </div>
-  </div>
-
 </div>
-
-<footer class="page-footer">
-  © 2026 <a href="#">Shahin Soft</a> · All Rights Reserved
-</footer>
-
+<footer class="page-footer">© 2026 <a href="../index.html">Shahin Soft</a> · All Rights Reserved</footer>
 </body>
 </html>
